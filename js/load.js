@@ -17,7 +17,7 @@ var socialtags = [{
     link: "mailto:mina-noshy@outlook.com"
 }, {
     img: "img/cv.svg",
-    link: "https://github.com/Mina-Noshy/Mina-Noshy.github.io/blob/master/resume/MinaNoshyCV.pdf"
+    link: "https://mina-noshy.github.io/resume/MinaNoshyCV.pdf"
 }]
 
 function loadSocialIcons() {
