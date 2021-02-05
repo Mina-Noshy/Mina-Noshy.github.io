@@ -11,7 +11,7 @@ var socialtags = [{
     link: "https://github.com/Mina-Noshy"
 }, {
     img: "img/linkedin.webp",
-    link: "https://www.linkedin.com/in/mina-noshy-a395231ab"
+    link: "https://www.linkedin.com/in/MinaNoshyWahba"
 }, {
     img: "img/mail.png",
     link: "mailto:mina-noshy@outlook.com"
