@@ -2,6 +2,7 @@
  *
  * mina noshy
  * mina-noshy@outlook.com
+ * +2 01111 257 052
  * 1/3/2021
  * 
  */
@@ -17,7 +18,7 @@ var socialtags = [{
     link: "mailto:mina-noshy@outlook.com"
 }, {
     img: "img/cv.svg",
-    link: "https://mina-noshy.github.io/resume/MinaNoshyCV.pdf"
+    link: "https://mina-noshy.github.io/resume/Mina_Noshy_CV.pdf"
 }]
 
 function loadSocialIcons() {
