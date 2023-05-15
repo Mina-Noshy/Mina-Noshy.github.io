@@ -489,7 +489,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5">
-                                                        <h5>Languages & OOP</h5>
+                                                        <h5>Languages</h5>
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="progress-box">
@@ -505,7 +505,7 @@
                                             <!--OOP items-->
                                             <li id="oop-skill-child" class="skills-items-description">
                                                 <div class="col-lg-12 text-center">
-                                                    Encapsulation, Abstraction, Inheritance, Polymorphism, Composition (C#, VB, JS, TS)
+                                                    C#, VB, JS, TS, SQL
                                                 </div>
                                             </li>
 
@@ -764,7 +764,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <button type="button" name="submit" id="submit" onclick="alert('Sorry you can not send a message right now. \n Please contact me by sending an email. \n Or let us get a voice call.')">
+                                        <button type="button" name="submit" id="submit" onclick="sendEmail()">
                                             Send Message
                                         </button>
                                     </div>
@@ -811,7 +811,7 @@
                                     <div class="info">
                                         <p>Phone</p>
                                         <h5>
-                                            <a href="https://web.whatsapp.com/send?phone=+201111257052&text=Hello_Mina_Noshy">+20 1111 2570 52</a> 
+                                            <a href="https://web.whatsapp.com/send?phone=+201111257052&text=Hello%20Mina%20Noshy">+20 1111 2570 52</a> 
                                             <br><a href="tel:+201210165412">+20 1210 1654 12</a>
                                         </h5>
                                     </div>
@@ -891,6 +891,23 @@
     <script src="assets/js/typed.js"></script>
     <script src="assets/js/validnavs.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        function sendEmail()
+        {
+            var _name = document.getElementById('name').value;
+            var _email = document.getElementById('email').value;
+            var _phone = document.getElementById('phone').value;
+            var _msg = document.getElementById('comments').value;
+
+            var _myEmail1 = 'mina-noshy@outlook.com';
+            var _myEmail2 = 'mina.noshy.wahba@gmail.com';
+
+            var _url = 'mailto:' + _myEmail1 + '?cc=' + _myEmail2 + ',' + _email + '&subject=Job%20Offer&body=' + _msg ;
+            
+            window.open(_url, '_blank');
+        }
+    </script>
 
 </body>
 
