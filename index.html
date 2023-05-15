@@ -1,65 +1,897 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
+
+
 <head>
+    <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" shrink-to-fit="no">
-    <meta content="mina noshy github io mina noshy software engineer .net full stack developer Mina-Noshy" name="description">
-    <meta content="mina noshy https://github.com/Mina-Noshy" name="author">
-    <title>Mina Noshy</title>
-    <link href="img/icon.ico" rel="shortcut icon"/>
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="mina noshy - github, portfolio, mina, elinx, epms, software, .net, dot net, asp, net core, xmarin, mobile, web, desktop">
+
+    <!-- ========== Page Title ========== -->
+    <title>Mina - Personal Portfolio</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/themify-icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/elegant-icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/validnavs.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/helper.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/unit-test.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <!-- ========== End Stylesheet ========== -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-S6n9EhWsFmAn3qAXZs8PQpuHxSGxTfTgTjKpudimVDX9CgMWJ3Bq3YsGGs2OZ+JfTugLNFbJHr8p+DyXBylw0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-<body>
-<button onclick="dayNightToggle()">Toggle dark mode</button>
-<div class="container vertical-center">
-    <div class="row spacing">
 
-        <img class="center col-10 col-sm-10 col-lg-5 col-md-5 spacing"
-            style="height: 500px; width: 650px;"
-             src="img/mina.png">
+<body class="bg-fixed dark-layout" style="background-image: url(assets/img/shape/banner-2.jpg);">
 
-        <div class="col-10 col-sm-10 col-lg-7 col-md-7 center spacing">
-
-            <h1>Hi, I am Mina</h1>
-
-            <p class="title-desc center">
-                Dot Net & Outsystems Developer <br> <br> 
-                C#, VB, SQL, JS, TYPE SCRIPT <br />
-                ASP CORE MVC, ASP CORE API <br />
-                EF CORE, DAPPER, ADO <br />
-                XAMARIN, MAUI, WPF <br>
-                ANGULAR, HTML, CSS, BOOTSTRAP <br />
-                XML, XAML, JSON <br />
-                Outsystems, GIT
-            </p>
-            
-            <div class="col-md-6 col-sm-7 center">
-                <div class="row" id="social-list"></div>
+    <!-- Start Preloader 
+    ============================================= -->
+    <div id="preloader">
+        <div id="ambrox-preloader" class="ambrox-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="M" class="letters-loading">
+                        M
+                    </span>
+                    <span data-text-preloader="B" class="letters-loading">
+                        B
+                    </span>
+                    <span data-text-preloader="R" class="letters-loading">
+                        R
+                    </span>
+                    <span data-text-preloader="O" class="letters-loading">
+                        O
+                    </span>
+                    <span data-text-preloader="X" class="letters-loading">
+                        X
+                    </span>
+                </div>
             </div>
-
-            <hr>
-            <p class="title-desc center">
-                <a href="mailto:mina.noshy.wahba@gmail.com" style="color: gray;">Mina Noshy Wahba</a>  <br>
-                <a href="https://wa.me/00201111257052" target="_blank" style="color: gray;">0020 1111 257 052</a>
-            </p>
-            
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="container-fluid resume-text">
-    <a href="resume/Mina_Noshy_CV.pdf">
-        <div class="resume-img"></div>
-        Resume
-    </a>
-</div>
-
-<script src="js/load.js" type="text/javascript"></script>
-<script>
+    <!-- End Preloader -->
 
 
-</script>
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav onepage-menu mobile-nav-only attr-border navbar-sticky navbar-default validnavs navbar-fixed dark no-background">
+
+
+            <div class="container d-flex justify-content-between align-items-center">            
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo.png" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="assets/img/logo.png" alt="Logo">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a class="smooth-menu" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#expertise">expertise</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#portfolio">portfolio</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#about">about</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#blog">blog</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+                <!-- Main Nav -->
+            </div>   
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Header Fixed 
+    ============================================= -->
+    <header class="header-fixed">
+        <div class="f-flex">
+            <div class="logo">
+                <a href="#"><img src="assets/img/logo-icon.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <ul class="nav">
+                    <li>
+                        <a class="smooth-menu" href="#home">
+                            <i class="fas fa-home"></i>
+                            <div class="menu-name">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="smooth-menu" href="#services">
+                            <i class="fas fa-cog"></i>
+                            <div class="menu-name">Services</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="smooth-menu" href="#portfolio">
+                            <i class="fas fa-briefcase"></i>
+                            <div class="menu-name">Portfolio</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="smooth-menu" href="#about">
+                            <i class="fas fa-user"></i>
+                            <div class="menu-name">About</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="smooth-menu" href="#resume">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="menu-name">Resume</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="smooth-menu" href="#contact">
+                            <i class="fas fa-comments"></i>
+                            <div class="menu-name">Contact</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=AU0TIOZhGqs" class="popup-youtube video-play-button theme">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Fixed -->
+
+   <!-- Start Banner 
+    ============================================= -->
+    <div class="auto-height bg-fixed banner-style-one">
+        <div class="container">
+            <div class="double-items">
+                <div class="row align-center">
+
+                    <div class="col-lg-6 info">
+                        <h1 class="text-invisible">WELCOME</h1>
+                        <h2>Hey <img src="assets/img/shape/4.png" alt="Icon"> I'm <span>Mina</span></h2>
+                        <h3 class="title">
+                            <span class="header-caption" id="page-top">
+                                <!-- type headline start-->
+                                <span class="cd-headline clip is-full-width">
+                                    <!-- ROTATING TEXT -->
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible">Dot Net Engineer</b>
+                                        <b class="is-hidden">Web Developer</b>
+                                        <b class="is-hidden">Mobile Developer</b>
+                                        <b class="is-hidden">Desktop Developer</b>
+                                        <b class="is-hidden">Database Developer</b>
+                                    </span>
+                                </span>
+                                <!-- type headline end -->
+                            </span>
+                        </h3>
+                        <div class="button mt-55">
+                            <a class="btn btn-md circle btn-theme effect" href="assets/resume/Mina_Noshy_CV.pdf">Download Resume</a>
+                            <a class="btn btn-md circle btn-theme effect" href="#resume">My Resume</a>
+                        </div>
+                    </div>
+
+                     <div class="col-lg-6 thumb" data-wow-delay="900ms">
+                        <img class=" wow fadeInDown" src="assets/img/illustration/my-img.png" alt="Thumb">
+                        <div class="shape-center">
+                            <img src="assets/img/shape/7.png" alt="Thumb">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="personal-social">
+                    <ul>
+                        <li class="github">
+                            <a href="https://github.com/mina-noshy"  target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/minanoshywahba/"  target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/MinaNoshyWahba"  target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Services
+    ============================================= -->
+    <div id="services" class="services-style-one-area box-layout default-padding bottom-less bg-light">
+        <div class="blur-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">My Expertise</h4>
+                        <h2 class="title">What I Do </h2>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Single Item -->
+                <div class="service-style-one col-lg-4 col-md-6">
+                    <div class="service-style-one-item">
+                        <img src="assets/img/icon/1.png" alt="Icon">
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">Web Development</a></h4>
+                        <p>
+                            As a web developer and software engineer, I can build high-performance websites using strong technologies such as <strong> (ASP.NET Core, Blazor, Angular, HTML, CSS, Bootstrap, JavaScript, jQuery, Ajax, TypeScript) </strong> and more.
+                        </p>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="service-style-one col-lg-4 col-md-6">
+                    <div class="service-style-one-item">
+                        <img src="assets/img/icon/2.png" alt="Icon">
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">Mobile Development</a></h4>
+                        <p>
+                            As a mobile developer and software engineer, I can build high-performance applications using strong technologies such as <strong> (Xamarin, .NET MAUI) </strong> and more.
+                        </p>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="service-style-one col-lg-4 col-md-6">
+                    <div class="service-style-one-item">
+                        <img src="assets/img/icon/4.png" alt="Icon">
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">Desktop Development</a></h4>
+                        <p>
+                            As a desktop developer and software engineer, I can build high-performance applications using strong technologies such as <strong> (WPF, WinForms, Crystal Report, Report Viewer) </strong> and more.
+                        </p>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+            </div>
+        </div>
+        
+
+    </div>
+    <!-- End Services -->
+
+    <!-- Start About 
+    ============================================= -->
+    <div id="about" class="about-style-six-area default-padding-top">
+        <div class="container">
+            <div class="row align-center">
+                <div class="about-style-six col-lg-5">
+                    <div class="thumb">
+                        <img class="wow fadeInUp" src="assets/img/illustration/my-img.png" alt="Thumb">
+                    </div>
+                </div>
+                <div class="about-style-six col-lg-6 offset-lg-1">
+                    <h4 class="sub-title">About Me</h4>
+                    <h2 class="title">I can develop <br> Web & Mobile & Desktop Apps</h2>
+                    <p>
+                        Hi, my name is Mina, and I specialize in .NET development. With my expertise, I can develop top-quality web, mobile, and desktop applications to meet your needs. Work with <br />
+                        <strong> Languages:          </strong> C#, SQL, VB, JS, TS <br />
+                        <strong> Mobile:             </strong> Xamarin, .NET MAUI <br />
+                        <strong> Database:           </strong> SQL, MySQL <br />
+                        <strong> ORM:                </strong> EF Core, ADO, Dapper <br />
+                        <strong> Web:                </strong> ASP Core(MVC-API), ASP.Net(MVC-API-Web Form), Blazor <br />
+                        <strong> UI/UX:              </strong> Angular, jQuery, Ajax, HTML, CSS, Bootstrap <br />
+                        <strong> Other:              </strong> Git, Outsystems
+                    </p>
+                    <div class="skill-list">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fab fa-microsoft"></i>
+                                </div>
+                                <div class="content">
+                                    <h4>Dot Net Developer</h4>
+                                    <span>Professional Web Backend Development</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="content">
+                                    <h4>MSSQL Developer</h4>
+                                    <span>Professional SQL Server Development</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa fa-mobile"></i>
+                                </div>
+                                <div class="content">
+                                    <h4>Mobile Developer</h4>
+                                    <span>Intermediate Mobile Development</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fab fa-angular"></i>
+                                </div>
+                                <div class="content">
+                                    <h4>Angular Developer</h4>
+                                    <span>Intermediate Web Frontend Development</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Resume 
+    ============================================= -->
+    <div id="resume" class="resume-area default-padding-top">
+        <div class="shape-right-top-extra">
+            <img src="assets/img/shape/14.png" alt="Shape">
+        </div>
+        <div class="container">
+            <div class="experience-content-box">
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+    
+                        <div class="nav nav-tabs text-center resume-tab-navs" id="nav-tab" role="tablist">
+    
+                            <button class="nav-link active" id="nav-id-1" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
+                                Biography <strong>01</strong>
+                            </button>
+                            <button class="nav-link" id="nav-id-2" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
+                                Skills <strong>02</strong>
+                            </button>
+                            <button class="nav-link" id="nav-id-3" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">
+                                Education <strong>03</strong>
+                            </button>
+    
+                        </div>
+    
+                        <div class="tab-content resume-tab-content" id="nav-tabContent">
+                            <!-- Single Item -->
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-id-1">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ul class="biography-table">
+                                            <li>
+                                                <h5>Name</h5>
+                                                <p>
+                                                    Mina Noshy Wahba
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Birthday</h5>
+                                                <p>
+                                                    08 October, 1996
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Age</h5>
+                                                <p>
+                                                    at 2023 (27 years old)
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Address</h5>
+                                                <p>
+                                                    Cairo, Egypt
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Email</h5>
+                                                <p>
+                                                    mina-noshy@outlook.com
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Phone</h5>
+                                                <p>
+                                                    +(20)1111257052
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Military Services</h5>
+                                                <p>
+                                                    Fulfilled
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Marital status</h5>
+                                                <p>
+                                                    Married
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+    
+                            <!-- Single Item -->
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-id-2">
+                                <div class="row align-center">
+                                    <div class="col-lg-12">
+                                        <ul class="skill-table">
+                                            <li id="oop-skill-parent">
+                                                <div class="row align-center">
+                                                    <div class="col-lg-2">
+                                                        <div class="icon">
+                                                            <i class="fab fa-laravel"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <h5>Languages & OOP</h5>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="progress-box">
+                                                            <h5>85%</h5>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" data-width="85"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!--OOP items-->
+                                            <li id="oop-skill-child" class="skills-items-description">
+                                                <div class="col-lg-12 text-center">
+                                                    Encapsulation, Abstraction, Inheritance, Polymorphism, Composition (C#, VB, JS, TS)
+                                                </div>
+                                            </li>
+
+                                            <li id="db-skill-parent">
+                                                <div class="row align-center">
+                                                    <div class="col-lg-2">
+                                                        <div class="icon">
+                                                            <i class="fab fa-laravel"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <h5>DB Design & Develop</h5>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="progress-box">
+                                                            <h5>85%</h5>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" data-width="85"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!--DB Design & Develop items-->
+                                            <li id="db-skill-child" class="skills-items-description">
+                                                <div class="col-lg-12 text-center">
+                                                    SQL Server, My SQL (EF, ADO, Dapper)
+                                                </div>
+                                            </li>
+
+                                            <li id="backend-skill-parent">
+                                                <div class="row align-center">
+                                                    <div class="col-lg-2">
+                                                        <div class="icon">
+                                                            <i class="fab fa-laravel"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <h5>Web Backend</h5>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="progress-box">
+                                                            <h5>80%</h5>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" data-width="80"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!--Web Backend items-->
+                                            <li id="backend-skill-child" class="skills-items-description">
+                                                <div class="col-lg-12 text-center">
+                                                    ASP Core (MVC, API), ASP.Net(MVC, API, Web Form), Blazor(Server, WASM)
+                                                </div>
+                                            </li>
+
+                                            <li id="frontend-skill-parent">
+                                                <div class="row align-center">
+                                                    <div class="col-lg-2">
+                                                        <div class="icon">
+                                                            <i class="fab fa-laravel"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <h5>Web Frontend</h5>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="progress-box">
+                                                            <h5>70%</h5>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" data-width="70"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!--Web Frontend items-->
+                                            <li id="frontend-skill-child" class="skills-items-description">
+                                                <div class="col-lg-12 text-center">
+                                                    Angular, jQuery, Ajax, HTML, CSS, Bootstrap 
+                                                </div>
+                                            </li>
+
+                                            <li id="mobile-skill-parent">
+                                                <div class="row align-center">
+                                                    <div class="col-lg-2">
+                                                        <div class="icon">
+                                                            <i class="fab fa-laravel"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <h5>Mobile Development</h5>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="progress-box">
+                                                            <h5>65%</h5>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" data-width="65"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!--Mobile items-->
+                                            <li id="mobile-skill-child" class="skills-items-description">
+                                                <div class="col-lg-12 text-center">
+                                                    Xamarin, .NET MAUI
+                                                </div>
+                                            </li>
+
+                                            <li id="desktop-skill-parent">
+                                                <div class="row align-center">
+                                                    <div class="col-lg-2">
+                                                        <div class="icon">
+                                                            <i class="fab fa-laravel"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <h5>Desktop Development</h5>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="progress-box">
+                                                            <h5>85%</h5>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" data-width="85"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!--Desktop items-->
+                                            <li id="desktop-skill-child" class="skills-items-description">
+                                                <div class="col-lg-12 text-center">
+                                                    Win Form, WPF, Crystal Report, Report Viewer
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+    
+                            <!-- Single Item -->
+                            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="nav-id-3">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ul class="education-table">
+                                            <li>
+                                                <h4>BSc in Information Systems</h4>
+                                                <h5>Sohag Higher Institute</h5>
+                                                <span>2015 - 2019</span>
+                                                <p>
+                                                    Sohag Higher Institute for Computer Science <br />
+                                                    and Management Technologies <strong>(2019)</strong> <br />
+                                                    <strong>BSc</strong> in Computer Science <strong>(Very Good)</strong>. 
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h4>.NET Engineer</h4>
+                                                <h5>Egyptian Armed Forces</h5>
+                                                <span>2020 - 2021</span>
+                                                <p>
+                                                    I've worked as a .NET Engineer, <br />
+                                                    to development a desktop Apps. <br />
+                                                    for armed forces internal systems and databases <br />
+                                                    using: <strong>C#, SQL, ADO</strong>. 
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h4>.NET Full Stack Engineer</h4>
+                                                <h5>eLinx Infotech LLC</h5>
+                                                <span>2022 - Present</span>
+                                                <p>
+                                                    I've worke as a .NET Full Stack Engineer <br />
+                                                    to development a web and desktop and mobile apps <br />
+                                                    using: <strong>C# & VB, SQL, ASP Core(MVC-API), ASP.NET(MVC-API, Web Forms), <br />
+                                                    Xamarin, Win Forms, Crystal Report, <br />
+                                                    Report Viewer, EF, ADO</strong>. 
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h4></h4>
+                                                <h5></h5>
+                                                <span></span>
+                                                <p>
+
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+    
+    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Resume -->
+
+    <!-- Start Contact Area 
+    ============================================= -->
+    <div id="contact" class="contact-area shape-less default-padding overflow-hidden">
+        <h2 class="text-shade">Contact</h2>
+        <div class="container">
+            <div class="contact-content">
+                <div class="row align-center">
+
+
+                    <div class="col-lg-7 contact-form-box mb-md-50 mb-xs-50">
+                        <div class="form-box">
+                            <h2>Let's talk?</h2>
+                            <p>
+                                You can send message to me.
+                            </p>
+                            <form action="/" method="POST" class="contact-form">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group comments">
+                                            <textarea class="form-control" id="comments" name="comments" placeholder="Message *"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button type="button" name="submit" id="submit" onclick="alert('Sorry you can not send a message right now. \n Please contact me by sending an email. \n Or let us get a voice call.')">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Alert Message -->
+                                <div class="col-lg-12 alert-notification">
+                                    <div id="message" class="alert-msg"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 offset-lg-1 info">
+                        <div class="content">
+                            <ul>
+                                <li class="contact-info-list wow fadeInUp">
+                                    <div class="icon">
+                                        <i class="fas fa-envelope-open-text"></i>
+                                    </div>
+                                    <div class="info">
+                                        <p>Email</p>
+                                        <h5>
+                                            <a href="mailto:mina-noshy@outlook.com">mina-noshy@outlook.com</a> 
+                                            <br> 
+                                            <a href="mailto:mina.noshy.wahba@gmail.com">mina.noshy.wahba@gmail.com</a>
+                                        </h5>
+                                    </div>
+                                </li>
+                                <li class="contact-info-list wow fadeInUp" data-wow-delay="300ms">
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="info">
+                                        <p>Address</p>
+                                        <h5>
+                                            Cairo, <br> Egypt
+                                        </h5>
+                                    </div>
+                                </li>
+                                <li class="contact-info-list wow fadeInUp" data-wow-delay="500ms">
+                                    <div class="icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="info">
+                                        <p>Phone</p>
+                                        <h5>
+                                            <a href="https://web.whatsapp.com/send?phone=+201111257052&text=Hello_Mina_Noshy">+20 1111 2570 52</a> 
+                                            <br><a href="tel:+201210165412">+20 1210 1654 12</a>
+                                        </h5>
+                                    </div>
+                                </li>
+                                <li class="contact-info-list wow fadeInUp" data-wow-delay="500ms">
+                                    <div class="icon">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <div class="info">
+                                        <p>Resume</p>
+                                        <h5>
+                                            <a href="assets/resume/Mina_Noshy_CV.pdf">download resume</a>
+                                        </h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Area -->
+
+    <!-- Start Footer 
+    ============================================= -->
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="footer-social">
+                        <li class="github">
+                            <a href="https://github.com/mina-noshy"  target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/minanoshywahba/"  target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/MinaNoshyWahba" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <p>&copy; 2023 Mina Noshy. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/progress-bar.min.js"></script>
+    <script src="assets/js/circle-progress.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/jquery.scrolla.min.js"></script>
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/validnavs.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

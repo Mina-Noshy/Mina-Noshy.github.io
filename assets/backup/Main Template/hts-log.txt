@@ -1,0 +1,23 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 11 May 2023 17:39:50 at https://validthemes.live/themeforest/ambrox/home-dark.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://validthemes.live/themeforest/ambrox/home-dark.html -O1 "E:\template\cv temp" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+17:40:43	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/$ (from https://validthemes.live/themeforest/ambrox/home-dark.html)
+17:40:43	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/assets/fonts/fa-brands-400.svg (from https://validthemes.live/themeforest/ambrox/assets/css/font-awesome.min.css)
+17:40:43	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/assets/fonts/fa-duotone-900.eot (from https://validthemes.live/themeforest/ambrox/assets/css/font-awesome.min.css)
+17:40:43	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/assets/fonts/fa-duotone-900.eot? (from https://validthemes.live/themeforest/ambrox/assets/css/font-awesome.min.css)
+17:40:43	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/assets/fonts/fa-duotone-900.ttf (from https://validthemes.live/themeforest/ambrox/assets/css/font-awesome.min.css)
+17:40:43	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/assets/fonts/fa-duotone-900.svg (from https://validthemes.live/themeforest/ambrox/assets/css/font-awesome.min.css)
+17:40:43	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/assets/fonts/fa-light-300.ttf (from https://validthemes.live/themeforest/ambrox/assets/css/font-awesome.min.css)
+17:40:43	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/assets/fonts/fa-light-300.svg (from https://validthemes.live/themeforest/ambrox/assets/css/font-awesome.min.css)
+17:40:43	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/assets/fonts/fa-regular-400.svg (from https://validthemes.live/themeforest/ambrox/assets/css/font-awesome.min.css)
+17:40:43	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/assets/fonts/fa-solid-900.svg (from https://validthemes.live/themeforest/ambrox/assets/css/font-awesome.min.css)
+17:40:44	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/assets/css/ElegantIcons.svg (from https://validthemes.live/themeforest/ambrox/assets/css/elegant-icons.css)
+17:40:44	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/ambrox/assets/css/flaticon.svg (from https://validthemes.live/themeforest/ambrox/assets/css/flaticon-set.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 54 seconds : 134 links scanned, 121 files written (10915559 bytes overall) [8741839 bytes received at 161885 bytes/sec], 3147536 bytes transferred using HTTP compression in 37 files, ratio 28%, 16.7 requests per connection
+(12 errors, 0 warnings, 0 messages)
